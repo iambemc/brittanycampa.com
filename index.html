@@ -38,6 +38,10 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .tab-active {
+            background-color: #588157 !important;
+            color: #ffffff !important;
+        }
     </style>
 </head>
 <body>
@@ -46,21 +50,30 @@
     <header class="bg-brand-light-gray/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-brand-charcoal tracking-tight">Brittany Campa</a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#about" class="text-gray-600 hover:text-brand-dark-sage transition-colors">About</a>
-                <a href="#experience" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Experience</a>
-                <a href="#skills" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Skills</a>
-                <a href="#contact" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Contact</a>
-            </nav>
-            <a href="#contact" class="hidden md:inline-block bg-brand-dark-sage hover:bg-opacity-90 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
-                Get In Touch
-            </a>
+            <div class="flex items-center gap-6">
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-brand-dark-sage transition-colors">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Services</a>
+                    <a href="#work" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Work</a>
+                    <a href="#experience" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Journey</a>
+                    <a href="#skills" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Skills</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Testimonials</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-dark-sage transition-colors">Contact</a>
+                </nav>
+                <div class="hidden sm:flex items-center gap-2 text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                    <a href="tel:714-406-0174" class="font-medium text-brand-charcoal hover:text-brand-dark-sage">(714) 406-0174</a>
+                </div>
+                <a href="#contact" class="hidden lg:inline-block bg-brand-dark-sage hover:bg-opacity-90 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                    Get In Touch
+                </a>
+            </div>
         </div>
     </header>
 
     <main class="pt-20">
         <!-- Hero Section -->
-        <section id="home" class="py-20 md:py-32">
+        <section id="home" class="py-16 md:py-28">
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-brand-charcoal leading-tight mb-4">
                     Architecting Digital Growth
@@ -69,7 +82,7 @@
                     As a Digital Solutions Architect, I partner with businesses to build their digital future through intuitive e-commerce platforms and smart, scalable automation.
                 </p>
                 <div class="flex justify-center items-center space-x-4">
-                    <a href="#experience" class="bg-brand-dark-sage hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg">
+                    <a href="#work" class="bg-brand-dark-sage hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg">
                         Explore My Work
                     </a>
                     <a href="https://www.linkedin.com/in/brittanycampa" target="_blank" class="bg-gray-200 hover:bg-gray-300 text-brand-charcoal font-bold py-3 px-8 rounded-lg transition-colors text-lg">
@@ -80,7 +93,7 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-20 bg-white section-fade-in">
+        <section id="about" class="py-16 bg-white section-fade-in">
             <div class="container mx-auto px-6">
                 <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
                     <div class="flex-shrink-0">
@@ -101,88 +114,217 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="py-20 section-fade-in">
+        <!-- Services Section -->
+        <section id="services" class="py-16 section-fade-in">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-16">Professional Experience</h2>
-                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-
-                    <!-- Scanista QR Solutions -->
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-                        <p class="text-sm text-brand-dark-sage font-semibold mb-1">Jan 2022 - Present</p>
-                        <h3 class="text-2xl font-semibold text-brand-charcoal">Founder & Digital Solutions Architect</h3>
-                        <p class="text-lg text-gray-500 mb-6">Scanista QR Solutions</p>
-                        <ul class="space-y-3 text-gray-600">
-                            <li><span class="font-semibold text-brand-dark-sage">Boosted user engagement by 40%</span> by developing custom interactive web tools (e.g., calculators, wizards).</li>
-                            <li><span class="font-semibold text-brand-dark-sage">Enabled targeted marketing campaigns</span> for 10+ merchants by building AI-powered customer databases.</li>
-                            <li><span class="font-semibold text-brand-dark-sage">Improved client consistency</span> by engineering a proprietary social media automation system for content posting.</li>
-                            <li><span class="font-semibold text-brand-dark-sage">Architected scalable Shopify solutions</span> using Liquid, metafields, and the cart API.</li>
-                        </ul>
+                <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-12">Core Services</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex flex-col sm:flex-row justify-center border-b-2 border-gray-200 mb-8">
+                        <button data-tab="branding" class="service-tab tab-active flex-1 py-3 px-4 font-semibold text-gray-600 bg-gray-100 transition-colors">Branding & Design</button>
+                        <button data-tab="ai" class="service-tab flex-1 py-3 px-4 font-semibold text-gray-600 bg-gray-100 transition-colors">AI & Automation</button>
+                        <button data-tab="web" class="service-tab flex-1 py-3 px-4 font-semibold text-gray-600 bg-gray-100 transition-colors">Web & App Dev</button>
+                        <button data-tab="ecommerce" class="service-tab flex-1 py-3 px-4 font-semibold text-gray-600 bg-gray-100 transition-colors">Social & E-commerce</button>
                     </div>
 
-                    <!-- E-commerce Business Owner -->
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-                        <p class="text-sm text-brand-dark-sage font-semibold mb-1">Jan 2021 - Present</p>
-                        <h3 class="text-2xl font-semibold text-brand-charcoal">E-commerce Business Owner</h3>
-                        <p class="text-lg text-gray-500 mb-6">Amazon and Shopify</p>
-                        <ul class="space-y-3 text-gray-600">
-                           <li><span class="font-semibold text-brand-dark-sage">Increased conversion rates by 20%</span> by authoring strategic A+ product listings on Amazon.</li>
-                           <li><span class="font-semibold text-brand-dark-sage">Achieved first-page search rankings</span> for 70% of products by building a custom Shopify store with advanced SEO.</li>
-                           <li><span class="font-semibold text-brand-dark-sage">Managed all business operations</span> from product sourcing and procurement to online marketing and sales.</li>
-                        </ul>
+                    <div id="tab-content" class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+                        <!-- Branding & Design Content -->
+                        <div id="branding" class="tab-pane">
+                            <ul class="space-y-2 text-gray-600 list-disc list-outside ml-5">
+                                <li>Logo Design & Brand Identity</li>
+                                <li>Business Cards & Print</li>
+                                <li>Digital Marketing Materials</li>
+                                <li>Brand Strategy</li>
+                            </ul>
+                        </div>
+                        <!-- AI & Automation Content -->
+                        <div id="ai" class="tab-pane hidden">
+                            <ul class="space-y-2 text-gray-600 list-disc list-outside ml-5">
+                                <li>Custom Business Automations</li>
+                                <li>AI-Powered Content Strategy</li>
+                                <li>Automated Client Forms</li>
+                                <li>AI Strategy Consulting</li>
+                                <li>AI Brand Photoshoots</li>
+                            </ul>
+                        </div>
+                        <!-- Web & App Development Content -->
+                        <div id="web" class="tab-pane hidden">
+                           <ul class="space-y-2 text-gray-600 list-disc list-outside ml-5">
+                                <li>Website Builds (E-commerce)</li>
+                                <li>Custom App Development</li>
+                                <li>Interactive Generators & Tools</li>
+                                <li>Shopify Integration</li>
+                                <li>Custom Branded QR Codes</li>
+                            </ul>
+                        </div>
+                        <!-- Social & E-commerce Content -->
+                        <div id="ecommerce" class="tab-pane hidden">
+                            <ul class="space-y-2 text-gray-600 list-disc list-outside ml-5">
+                                <li>Social Media Strategy & Growth</li>
+                                <li>Advertising Campaigns (Digital & TV)</li>
+                                <li>Google Business Profile Optimization</li>
+                                <li>E-commerce Store Management</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Leadership & Community Section -->
-        <section id="leadership" class="py-20 bg-white section-fade-in">
-             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-16">Leadership & Community</h2>
-                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-                    <!-- Volunteer Experience -->
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+        <!-- Featured Work Section -->
+        <section id="work" class="py-16 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-16">Featured Work & Designs</h2>
+                <div class="max-w-5xl mx-auto space-y-16">
+                    <!-- Project 1: Joplin Tree Experts -->
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        <div class="rounded-lg shadow-lg overflow-hidden">
+                           <img src="https://i.postimg.cc/BQ14NWPJ/Screenshot-2025-10-12-9-34-47-AM.png" alt="Joplin Tree Experts Website" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-brand-charcoal mb-2">Client Website: Joplin Tree Experts</h3>
+                            <p class="text-gray-600 mb-4">A static, responsive SPA built with semantic HTML5 and styled using a mobile-first approach with CSS Flexbox. DOM manipulation is powered by vanilla JavaScript to handle user events.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">HTML5</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">CSS3</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">JavaScript</span>
+                            </div>
+                            <a href="https://iambemc.github.io/joplin_tree_experts_website/" target="_blank" class="inline-block text-brand-dark-sage font-semibold hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project 2: PTA Intake Form -->
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        <div class="rounded-lg shadow-lg overflow-hidden md:order-2">
+                           <img src="https://i.postimg.cc/wT9nyScq/Screenshot-2025-10-12-2-45-50-PM.png" alt="PTA Client Intake Form" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="text-2xl font-semibold text-brand-charcoal mb-2">PTA Client Intake Form</h3>
+                            <p class="text-gray-600 mb-4">A dynamic, multi-step intake form that manages application state entirely on the client-side with vanilla JavaScript. The UI leverages DOM manipulation to conditionally render form sections.</p>
+                             <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">HTML</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">CSS</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">JavaScript</span>
+                            </div>
+                             <a href="https://iambemc.github.io/LamptonElementaryPTAIntakeForm/" target="_blank" class="inline-block text-brand-dark-sage font-semibold hover:underline">View Form &rarr;</a>
+                        </div>
+                    </div>
+                     <!-- Project 3: QR Code Generator -->
+                     <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        <div class="rounded-lg shadow-lg overflow-hidden">
+                           <img src="https://i.postimg.cc/wxncnJML/Screenshot-2025-10-12-2-50-22-PM.png" alt="QR Code Generator Tool" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-brand-charcoal mb-2">QR Code Generator</h3>
+                            <p class="text-gray-600 mb-4">A client-side tool built with vanilla JavaScript that uses the Fetch API to make asynchronous GET requests to a third-party service, dynamically generating and rendering QR code images. (Password: <strong class="text-brand-dark-sage">scanista</strong>)</p>
+                             <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">HTML</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">CSS</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">JavaScript</span>
+                            </div>
+                             <a href="#" id="qr-generator-link" class="inline-block text-brand-dark-sage font-semibold hover:underline">View Tool &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project 4: Veo3 Videos -->
+                     <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        <div class="rounded-lg shadow-lg overflow-hidden md:order-2">
+                           <img src="https://i.postimg.cc/MKm291m0/portifio.jpg" alt="AI-Generated Veo3 Videos" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="text-2xl font-semibold text-brand-charcoal mb-2">AI-Generated Veo3 Videos</h3>
+                            <p class="text-gray-600 mb-4">A showcase of generative AI capabilities, demonstrating iterative prompt refinement and parameter tuning with Google's Veo3 to produce high-fidelity video content.</p>
+                             <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">Veo3</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">AI Prompting</span>
+                                <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-full">Canva</span>
+                            </div>
+                             <a href="https://www.canva.com/design/DAG1UnUgYXw/VvFq2pHymgkLHX2nVzgo6g/view?utm_content=DAG1UnUgYXw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h83e3c25160" target="_blank" class="inline-block text-brand-dark-sage font-semibold hover:underline">View Videos &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Process Section -->
+        <section id="process" class="py-10 section-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-12">My Process</h2>
+                <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-brand-sage mb-2">01</div>
+                        <h3 class="text-xl font-semibold text-brand-charcoal mb-2">Discovery & Strategy</h3>
+                        <p class="text-gray-600">We start by understanding your unique business goals and challenges to create a tailored roadmap for success.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-brand-sage mb-2">02</div>
+                        <h3 class="text-xl font-semibold text-brand-charcoal mb-2">Design & Development</h3>
+                        <p class="text-gray-600">I build your custom solution, focusing on clean design, robust functionality, and a seamless user experience.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-brand-sage mb-2">03</div>
+                        <h3 class="text-xl font-semibold text-brand-charcoal mb-2">Launch & Growth</h3>
+                        <p class="text-gray-600">After a successful launch, I provide the tools and insights you need to optimize, grow, and achieve your long-term objectives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Journey Section -->
+        <section id="experience" class="py-16 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-16">My Professional Journey</h2>
+                <div class="max-w-3xl mx-auto relative border-l-2 border-brand-sage/30 pl-10 space-y-12">
+
+                    <!-- Timeline Item 1: VP of Communication -->
+                    <div class="relative">
+                        <div class="absolute -left-[49px] top-1 w-6 h-6 bg-brand-dark-sage rounded-full border-4 border-white"></div>
                         <p class="text-sm text-brand-dark-sage font-semibold mb-1">Jan 2024 - Present</p>
                         <h3 class="text-2xl font-semibold text-brand-charcoal">VP of Communication & Council Member</h3>
                         <p class="text-lg text-gray-500 mb-6">NLMUSD Elementary School</p>
-                        <ul class="space-y-3 text-gray-600">
+                        <ul class="space-y-3 text-gray-600 list-disc list-outside ml-5">
                             <li><span class="font-semibold text-brand-dark-sage">Leads communication strategy</span> to engage with hundreds of families and staff across the school community.</li>
                             <li><span class="font-semibold text-brand-dark-sage">Governs budget allocation</span> for critical school programs as a key member of the School Site Council.</li>
                         </ul>
                     </div>
-
-                    <!-- Community Affiliations -->
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-                         <h3 class="text-2xl font-semibold text-brand-charcoal mb-6">Community Affiliations</h3>
-                         <div class="space-y-4">
-                            <div class="flex items-center gap-4">
-                                <div class="bg-brand-sage/20 p-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
-                                <p class="text-gray-600">Active member of the <span class="font-semibold">Google Developer Program</span></p>
-                            </div>
-                             <div class="flex items-center gap-4">
-                                <div class="bg-brand-sage/20 p-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg></div>
-                                <p class="text-gray-600">Engaged with the <span class="font-semibold">Google Cloud Program</span></p>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="bg-brand-sage/20 p-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
-                                <p class="text-gray-600">Proud participant in <span class="font-semibold">Women in Tech by Google</span></p>
-                            </div>
-                         </div>
+                    
+                    <!-- Timeline Item 2: Founder -->
+                    <div class="relative">
+                        <div class="absolute -left-[49px] top-1 w-6 h-6 bg-brand-dark-sage rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-brand-dark-sage font-semibold mb-1">Jan 2022 - Present</p>
+                        <h3 class="text-2xl font-semibold text-brand-charcoal">Founder & Digital Solutions Architect</h3>
+                        <a href="https://iambemc.github.io/scanista/" target="_blank" class="text-lg text-brand-dark-sage hover:underline mb-6 inline-block">Scanista QR Solutions</a>
+                        <ul class="space-y-3 text-gray-600 list-disc list-outside ml-5">
+                            <li><span class="font-semibold text-brand-dark-sage">Boosted user engagement by 40%</span> by developing custom interactive web tools (e.g., calculators, wizards).</li>
+                            <li><span class="font-semibold text-brand-dark-sage">Enabled targeted marketing campaigns</span> for 10+ merchants by building AI-powered customer databases.</li>
+                            <li><span class="font-semibold text-brand-dark-sage">Architected scalable Shopify solutions</span> using Liquid, metafields, and the cart API.</li>
+                        </ul>
                     </div>
+                    
+                    <!-- Timeline Item 3: E-commerce Owner -->
+                    <div class="relative">
+                        <div class="absolute -left-[49px] top-1 w-6 h-6 bg-brand-dark-sage rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-brand-dark-sage font-semibold mb-1">Jan 2021 - Present</p>
+                        <h3 class="text-2xl font-semibold text-brand-charcoal">E-commerce Business Owner</h3>
+                        <p class="text-lg text-gray-500 mb-6">Amazon and Shopify</p>
+                        <ul class="space-y-3 text-gray-600 list-disc list-outside ml-5">
+                           <li><span class="font-semibold text-brand-dark-sage">Increased conversion rates by 20%</span> by authoring strategic A+ product listings on Amazon.</li>
+                           <li><span class="font-semibold text-brand-dark-sage">Achieved first-page search rankings</span> for 70% of products by building a custom Shopify store with advanced SEO.</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-             </div>
+            </div>
         </section>
 
         <!-- Skills & Credentials Section -->
-        <section id="skills" class="py-20 section-fade-in">
+        <section id="skills" class="py-16 section-fade-in">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-16">Technical Skills & Credentials</h2>
-                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-                    
-                    <!-- Core Skills -->
-                    <div>
-                         <h3 class="text-2xl font-semibold text-brand-charcoal mb-6 text-center md:text-left">Core Skills</h3>
-                         <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                <div class="max-w-6xl mx-auto">
+                    <div class="mb-12">
+                         <h3 class="text-2xl font-semibold text-brand-charcoal mb-6 text-center">Core Skills</h3>
+                         <div class="flex flex-wrap justify-center gap-3">
                             <span class="skill-badge">Shopify</span>
                             <span class="skill-badge">Liquid Coding</span>
                             <span class="skill-badge">AI & Prompt Engineering</span>
@@ -198,56 +340,109 @@
                         </div>
                     </div>
 
-                    <!-- Certifications -->
-                    <div>
-                        <h3 class="text-2xl font-semibold text-brand-charcoal mb-6 text-center md:text-left">Certifications</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="cert-card">Google AI Essentials</div>
-                            <div class="cert-card">Google AI Prompting</div>
-                            <div class="cert-card">Digital Marketing & E-commerce</div>
-                            <div class="cert-card">Social Media Specialist</div>
+                    <div class="grid md:grid-cols-2 gap-12 border-t border-gray-200 pt-12">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-brand-charcoal mb-4">Certifications</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Google AI Essentials</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Google AI Prompting</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Digital Marketing & E-commerce</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-brand-dark-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Social Media Specialist</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-brand-charcoal mb-4">Publication</h3>
+                            <p class="font-semibold text-brand-dark-sage mb-2">Interactive Guide to AI Prompting</p>
+                            <p class="text-gray-600">Authored a guide to empower small business owners with practical skills in generative AI, moving users beyond basic queries to sophisticated prompt engineering for real-world business applications.</p>
                         </div>
                     </div>
                 </div>
-                 <!-- Publication Spotlight -->
-                 <div class="max-w-6xl mx-auto mt-10 bg-brand-sage/10 rounded-lg p-8 border border-brand-sage/20 shadow-sm">
-                    <h3 class="text-2xl font-bold text-brand-dark-sage mb-3">Publication: Interactive Guide to AI Prompting</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Authored a guide to empower small business owners with practical skills in generative AI, moving users beyond basic queries to sophisticated prompt engineering for real-world business applications.
-                    </p>
-                </div>
             </div>
         </section>
-
+        
         <style>
             .skill-badge {
                 @apply bg-brand-sage/20 text-brand-dark-sage text-base font-medium px-4 py-2 rounded-full transition-all duration-300 cursor-default hover:bg-brand-dark-sage hover:text-white hover:scale-105;
             }
-            .cert-card {
-                @apply bg-white p-4 rounded-lg border border-gray-200 text-center text-gray-700 font-medium;
-            }
         </style>
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-brand-charcoal text-center mb-16">What My Clients Are Saying</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-brand-light-gray p-8 rounded-lg">
+                        <p class="text-gray-600 italic mb-6">“From start to finish, Brittany exceeded every expectation. She provided a clear roadmap, brought creative solutions, and created a seamless experience. The final result was not only visually stunning but strategically powerful.”</p>
+                        <div>
+                            <p class="font-semibold text-brand-charcoal">Danielle T.</p>
+                            <p class="text-sm text-gray-500">Nonprofit Operations Manager</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-brand-light-gray p-8 rounded-lg">
+                        <p class="text-gray-600 italic mb-6">“Working with Brittany was effortless. She transformed our scattered ideas into a clear, automated system that saves us time. Her eye for branding and her tech knowledge are unmatched.”</p>
+                        <div>
+                            <p class="font-semibold text-brand-charcoal">Jasmine R.</p>
+                            <p class="text-sm text-gray-500">Small Business Owner</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 (Spans two columns on larger screens if needed) -->
+                    <div class="bg-brand-light-gray p-8 rounded-lg md:col-span-2">
+                         <p class="text-gray-600 italic text-center text-xl mb-6">“Brittany took our marketing from basic to brilliant. She built a strategy that made sense for our audience and explained everything in plain English. She genuinely cares about your success.”</p>
+                        <div class="text-center">
+                            <p class="font-semibold text-brand-charcoal">Carlos M.</p>
+                            <p class="text-sm text-gray-500">Community Program Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-white section-fade-in">
+        <section id="contact" class="py-16 section-fade-in">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-2xl mx-auto">
                     <h2 class="text-3xl font-bold text-brand-charcoal">Let's Create Together</h2>
                     <p class="text-lg text-gray-600 mt-4 mb-8">
                         I'm currently available for freelance consulting and project collaborations. If you have an idea you're passionate about, let's connect and build something remarkable.
                     </p>
-                    <div class="flex items-center justify-center gap-4 bg-gray-100 border border-gray-200 rounded-lg p-4 max-w-md mx-auto mb-6">
-                        <span id="email-text" class="text-lg text-brand-dark-sage font-medium">b.campa00@outlook.com</span>
-                        <button id="copy-email-btn" class="bg-brand-dark-sage hover:bg-opacity-90 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
-                            Copy
-                        </button>
-                    </div>
                     
-                    <a href="BRITTANY CAMPA - Founder & Digital Solutions Architect Resume.pdf" target="_blank" class="inline-block bg-gray-200 hover:bg-gray-300 text-brand-charcoal font-bold py-3 px-8 rounded-lg transition-colors text-lg mb-8">
-                        View Resume (PDF)
-                    </a>
+                    <!-- Inquiry Form -->
+                    <form name="contact" method="POST" data-netlify="true" class="max-w-lg mx-auto text-left">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-sage focus:border-brand-sage">
+                            </div>
+                            <div>
+                                <label for="business-name" class="block text-gray-700 font-medium mb-2">Business Name <span class="text-gray-500 font-normal">(Optional)</span></label>
+                                <input type="text" id="business-name" name="business_name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-sage focus:border-brand-sage">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-sage focus:border-brand-sage">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number <span class="text-gray-500 font-normal">(Optional)</span></label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-sage focus:border-brand-sage">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-sage focus:border-brand-sage"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-brand-dark-sage hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
 
-                    <div class="flex justify-center mt-4 space-x-6">
+                    <div class="flex justify-center mt-12 space-x-6">
                          <a href="https://www.linkedin.com/in/brittanycampa" target="_blank" class="text-gray-500 hover:text-brand-dark-sage transition-colors">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                         </a>
@@ -258,7 +453,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path></svg>
                         </a>
                          <a href="https://linktr.ee/iambemc" target="_blank" class="text-gray-500 hover:text-brand-dark-sage transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9V3m0 18a9 9 0 0 0-9-9m-9 9a9 9 0 0 1 9-9"></path></svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v8h-2v-8z" /></svg>
                         </a>
                     </div>
                 </div>
@@ -292,28 +487,39 @@
             sections.forEach(section => {
                 observer.observe(section);
             });
-
-            // Copy email functionality
-            const copyBtn = document.getElementById('copy-email-btn');
-            const emailText = document.getElementById('email-text');
             
-            copyBtn.addEventListener('click', () => {
-                const email = emailText.innerText;
-                const tempInput = document.createElement('textarea');
-                tempInput.value = email;
-                document.body.appendChild(tempInput);
-                tempInput.select();
-                document.execCommand('copy');
-                document.body.removeChild(tempInput);
+            // Password prompt for QR Generator
+            const qrLink = document.getElementById('qr-generator-link');
+            if(qrLink) {
+                qrLink.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const password = prompt("Please enter the password to view this project:");
+                    if (password && password.toLowerCase() === "scanista") {
+                        window.open('https://iambemc.github.io/qr-generator/', '_blank');
+                    } else if (password !== null) {
+                         alert("Access Denied. Incorrect password.");
+                    }
+                });
+            }
 
-                const originalText = copyBtn.innerText;
-                copyBtn.innerText = 'Copied!';
-                copyBtn.disabled = true;
+            // Tab functionality for Services
+            const tabs = document.querySelectorAll('.service-tab');
+            const panes = document.querySelectorAll('.tab-pane');
 
-                setTimeout(() => {
-                    copyBtn.innerText = originalText;
-                    copyBtn.disabled = false;
-                }, 2000);
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Deactivate all tabs and panes
+                    tabs.forEach(t => t.classList.remove('tab-active'));
+                    panes.forEach(p => p.classList.add('hidden'));
+
+                    // Activate the clicked tab and its corresponding pane
+                    tab.classList.add('tab-active');
+                    const targetPaneId = tab.dataset.tab;
+                    const targetPane = document.getElementById(targetPaneId);
+                    if (targetPane) {
+                        targetPane.classList.remove('hidden');
+                    }
+                });
             });
         });
     </script>
